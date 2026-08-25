@@ -1,0 +1,49 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "browse_comp",
+    "slug": "browse-comp",
+    "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+    "group": "Assistants",
+    "tags": [
+      "Agent"
+    ],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/browse_comp",
+    "inspect_ai": "0.3.260",
+    "eval_version": "3-B",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-local",
+    "cost_class": "high",
+    "sandbox": [
+      "solver"
+    ],
+    "requires_internet": true,
+    "fast": true,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "browse_comp",
+      "samples": 1266
+    }
+  ],
+  "total_samples": 1266,
+  "external_assets": [
+    {
+      "type": "direct_url",
+      "source": "https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
